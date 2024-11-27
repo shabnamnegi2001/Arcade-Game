@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: yellow;
+    background-color: yellow;
+    /* background-image: url('assets/backgrounds/background.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-form{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px; 
+    margin: auto;
+    padding: 20px;
+    height: 800px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c172e;
+    z-index: 1000;
+}
+
+
+
+.welcome-form h1{
+    font-size: 6rem;
+}
+
+.welcome-form label{
+    font-size: 2rem;
+}
+.welcome-form .inner{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+}
+
+.welcome-form input{
+    height: 30px;
+    background-color: #1c172e;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.welcome-form input::placeholder{
+    color: rgb(122, 122, 69);
+}
+.welcome-form .inner button{
+    /* height: 40px; */
+    margin-top: 30px;
+    background-color: #1c172e;
+    font-size: 2rem;
+    padding: 10px;
+    color: yellow;
+}
+
+.lobby-container{
+    max-height: 300px;
+    min-height: 200px;
+    height: auto;
+    width: 150px;
+    position: absolute;
+    right: 206px;
+    z-index: 100;
+    top : 0px;
+    color: black;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    background-color: rgba(241, 239, 239, 0.534);
+    text-align: center;
+    font-weight:600;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.lobby{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap : 10px;
+    height: auto;
+}
+
+
+.lobby .lobby-item{
+    border : 1px solid red;
+    min-height: 40px;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+}
+
+.lobby image{
+    display: inline-flex;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+
+}
